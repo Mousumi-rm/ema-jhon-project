@@ -1,0 +1,22 @@
+.shope-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: white;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+    margin: 50px;
+}
+.cart-container{
+    font-family: Lato;
+    background-color:#d8bd93;
+    color: #0E161A;
+    width: 264px;
+    height: 944px;
+    text-align:center;
+    padding: 8px;
+    position: sticky;
+    top:0;
+}

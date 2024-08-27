@@ -1,10 +1,20 @@
 import React from 'react';
-
+import './Header.css'
+import logo from '../../assets/images/Logo.svg'
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
-        <div>
-            <h1>this is my header</h1>
-        </div>
+        <nav className='header'>
+            <Link to='/' >
+            <img src={logo} alt="" />
+            </Link>
+            <div>
+                <Link to="/">Shop</Link>
+                <Link to="/order">Order</Link>
+                <Link to="/inventory">Inventory</Link>
+                <Link to="/login">Login</Link>
+            </div>
+        </nav>
     );
 };
 
